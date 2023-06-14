@@ -1,0 +1,509 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+/* DOCUMENT RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
+
+input, textarea, button, a {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* CSS VARIABLES  */
+:root{
+    --ff: 'Roboto', sans-serif;
+    --primary-color: #d1eaff;
+    --secondary-color: #de6283;
+    --tertiary-color: #1e3659;
+    --white: white;
+
+    --h1: clamp(60px, 3vw, 70px);
+    --h2: clamp(50px, 3vw, 60px);
+    --h3: clamp(40px, 2vw, 50px);
+    --h4: clamp(30px, 2vw, 40px);
+    --h5: clamp(18px, 2vw, 20px);
+    --p: clamp(18px, 1vw, 12px);
+}
+
+/* UTILITY CLASSES  */
+
+h1 {
+    font-size: var(--h1);
+    font-weight: 600;
+}
+
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+    font-weight: 500;
+}
+h5 {
+    font-size: var(--h5);
+}
+
+p {
+    font-size: var(--p);
+}
+
+.mg-bt {
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: min(1400px, 90%);
+    margin-inline: auto;
+    padding: 2rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+   
+}
+
+.button2 {
+    background-color: var(--tertiary-color);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+
+.prd_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+
+/* GENERAL STYLES */
+
+header {
+    width: min(1400px, 70%);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo {
+    background-color: var(--tertiary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--white) ;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar{
+    display: none;
+    gap: 2rem;
+}
+
+.navbar li a:hover {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.herosection {
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: var(--white);
+    flex-direction: column;
+    background-image: url(./images/HD-wallpaper-chocolate-cake-blur-sweets-cake-with-cherry-dessert.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: difference;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+.heroimg{
+    width: 350px;
+    display: none;
+}
+
+.ab1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.ab1 p {
+    text-align: justify;
+    
+}
+
+.abicon {
+    width: 80px;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.aboutsection {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2rem;
+}
+
+.services {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.about2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutinner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aboutimg {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.ps {
+    background-color: #f6fbff;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products {
+    width: 400px;
+    background-color: #d1eaff   ;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.textt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.textt img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.txt_list {
+    display: flex;
+    gap: 2rem;
+}
+
+.newsletter {
+    background-image: url(./images/news.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nw {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.inn {
+    width: 800px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+footer {
+    background-color: var(--tertiary-color);
+    color: var(--neutral-color);
+    padding-block: 4rem;
+    color: var(--primary-color);
+  }
+  
+.foot {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 5rem;
+  }
+  
+.ft1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.foot-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.foot-nav li {
+    list-style: none;
+  }
+  
+.foot-nav li a {
+    color: var(--neutral-color);
+    text-decoration: none;
+  }
+  
+  .src-code {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  footer input {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  
+  .gog {
+    width: 150px;
+  }
+  
+  .gogl {
+    width: 100px;
+  }
+
+
+
+
+  /* ABOUT PAGE */
+
+
+  .mini_hero {
+    height: 50vh;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+
+  .abbtttt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .abbtttt p {
+    text-align: justify;
+  }
+
+
+  .abttimmg {
+    width: 400px;
+  }
+
+  .mv {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mv p {
+    text-align: justify;
+  }
+
+
+  /* SINGLE PRODUCT PAGE */
+
+  .prod__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-prod{ 
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 4rem;
+
+}
+
+.prod__details {
+    display: flex;
+    align-items: center;
+}
+
+.img__extra {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+
+
+}
+
+.img__extra img {
+    width: 100px;
+}
+
+.grp__img {
+        
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.prd__main {
+    padding: 1rem;
+    
+}
+
+.product__info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+} 
+
+.del {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid var(--color-bk);
+    padding: 1rem;
+    border-radius: 10px;
+
+} 
+
+.dell {
+    width: 10%;
+}
+
+
+
+@media (min-width:60rem) {
+    .aboutsection {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .ab1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .about2 {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .abbb {
+        display: flex;
+        gap: 4rem;
+
+    }
+
+    .aboutimg {
+        width: 500px
+        
+    }
+
+    /* FOOTER */
+    .foot {
+        flex-direction: row;
+    }
+
+
+    /* ABOUT SECTION RESPONSIVEMNESS */
+    .mv {
+        flex-direction: row;
+    }
+
+    .abbtttt {
+        flex-direction: row;
+    }
+
+
+}

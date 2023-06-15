@@ -461,6 +461,22 @@ footer {
 
 
 
+/* all products page */
+
+
+.st {
+    display: flex;
+    justify-content: center;
+
+}
+.search {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+
 @media (min-width:60rem) {
     .aboutsection {
         flex-direction: row;

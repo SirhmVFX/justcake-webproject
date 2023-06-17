@@ -106,7 +106,8 @@ button {
 /* GENERAL STYLES */
 
 header {
-    width: min(1400px, 70%);
+    position: relative;
+    width: min(1400px, 90%);
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -123,9 +124,19 @@ header {
     font-weight: 900;
 }
 
+
+
 .navbar{
-    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    top: 100px;
+    left: 0px;
+
+    background-color: var(--tertiary-color);
+    width: 100vw;
+    height: 300px;
 }
 
 .navbar li a:hover {
@@ -369,6 +380,10 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--white);
+    background-image: url(./images/images/abbtt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: color-burn;
   }
 
 

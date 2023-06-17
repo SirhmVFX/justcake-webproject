@@ -156,7 +156,7 @@ header {
     height: 90vh;
     color: var(--white);
     flex-direction: column;
-    background-image: url(./images/HD-wallpaper-chocolate-cake-blur-sweets-cake-with-cherry-dessert.jpg);
+    background-image: url(./images/images/HD-wallpaper-chocolate-cake-blur-sweets-cake-with-cherry-dessert.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: difference;
@@ -260,6 +260,7 @@ header {
 
 .txt_list {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -277,13 +278,14 @@ header {
 
 .nw {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
     justify-content: space-between;
 }
 
 .inn {
-    width: 800px;
+    width: auto;
     background-color: transparent;
     border: 1px solid black;
     padding: 1rem;
@@ -332,6 +334,10 @@ footer {
     align-items: center;
   }
 
+  .inn {
+      width: 800px;
+  }
+
   footer input {
     border: 1px solid white;
     background-color: black;
@@ -346,6 +352,10 @@ footer {
   
   .gogl {
     width: 100px;
+  }
+
+  .txt_list {
+    flex-direction: row;
   }
 
 
@@ -505,6 +515,12 @@ footer {
         width: 500px
         
     }
+
+    .nw {
+        flex-direction: row;
+    }
+
+
 
     /* FOOTER */
     .foot {

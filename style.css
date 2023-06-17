@@ -133,10 +133,11 @@ header {
     gap: 2rem;
     top: 100px;
     left: 0px;
+    padding: 2rem;
 
     background-color: var(--tertiary-color);
     width: 100vw;
-    height: 300px;
+    height: 350px;
 }
 
 .navbar li a:hover {
@@ -363,9 +364,6 @@ footer {
     width: 100px;
   }
 
-  .txt_list {
-    flex-direction: row;
-  }
 
 
 
@@ -501,6 +499,10 @@ footer {
 
 
 @media (min-width:60rem) {
+
+    .txt_list {
+            flex-direction: row;
+        }
     .inn {
         width: 800px;
     }

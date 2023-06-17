@@ -334,9 +334,7 @@ footer {
     align-items: center;
   }
 
-  .inn {
-      width: 800px;
-  }
+
 
   footer input {
     border: 1px solid white;
@@ -488,6 +486,9 @@ footer {
 
 
 @media (min-width:60rem) {
+    .inn {
+        width: 800px;
+    }
     .aboutsection {
         flex-direction: row;
         gap: 4rem;

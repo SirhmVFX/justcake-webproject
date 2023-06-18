@@ -141,12 +141,14 @@ header {
     
     height: 0px;
     opacity: 0;
+    transition: .4s;
 }
 
 
 .navbar.is-active {
     height: 350px;
     opacity: 1;
+    transition: .4s;
 }
 
 .navbar li a:hover {
@@ -546,6 +548,16 @@ footer {
     .nw {
         flex-direction: row;
     }
+
+    .navbar {
+        position: ;
+        flex-direction: row;
+        opacity: 1;
+        color: var(--tertiary-color);
+        background-color: none;
+    }
+
+
 
 
 

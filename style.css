@@ -133,11 +133,20 @@ header {
     gap: 2rem;
     top: 100px;
     left: 0px;
+    right: 0;
+    color: var(--white);
     padding: 2rem;
 
     background-color: var(--tertiary-color);
-    width: 100vw;
+    
+    height: 0px;
+    opacity: 0;
+}
+
+
+.navbar.is-active {
     height: 350px;
+    opacity: 1;
 }
 
 .navbar li a:hover {

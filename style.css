@@ -492,6 +492,87 @@ footer {
 }
 
 
+/* REVIEW */
+.review {
+    position: relative;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1,
+.btn2 {
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    color: var(--color-bk);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.btn1 {
+    left: -100px;
+
+}
+
+.btn2 {
+    right: -100px;
+
+}
+
+.review-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+.review-cards {
+    width: 400px;
+
+}
+
+.rv2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.rvvv {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.review-details {
+    position: relative;
+    padding: 3rem 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.review-ratings {
+    background-color: white;
+    padding: 1rem;
+    position: absolute;
+    top: -30px;
+    box-shadow: 0 10px 10px rgb(213, 213, 213);
+    border-radius: 10px;
+}
+
+
 
 /* all products page */
 

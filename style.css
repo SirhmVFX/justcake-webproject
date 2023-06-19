@@ -550,11 +550,16 @@ footer {
     }
 
     .navbar {
-        position: ;
+        position: relative;
         flex-direction: row;
         opacity: 1;
         color: var(--tertiary-color);
-        background-color: none;
+        background-color: transparent;
+        top: 0;
+    }
+
+    .hamburger {
+        display: none;
     }
 
 

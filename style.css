@@ -246,7 +246,7 @@ header {
 }
 
 .ps {
-    background-color: #f6fbff;
+    background-color: var(--primary-color);
 }
 
 .pricing {
@@ -255,8 +255,11 @@ header {
 }
 
 .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 400px;
-    background-color: #d1eaff   ;
+    background-color: white;
     padding: 2rem;
     border-radius: 10px;
 }

@@ -403,6 +403,7 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 3rem;
   }
 
   .abbtttt p {
@@ -412,6 +413,7 @@ footer {
 
   .abttimmg {
     width: 400px;
+    border-radius: 20px;
   }
 
   .mv {

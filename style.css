@@ -497,6 +497,48 @@ footer {
 }
 
 
+
+
+/* CONTACT P[AGE */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.top1 {
+    text-align: center;
+}
+
+.form-sections {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-sections input {
+    padding: .5rem;
+    width: 400px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.form-div textarea {
+    padding: .5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+
 /* REVIEW */
 .review {
     position: relative;
